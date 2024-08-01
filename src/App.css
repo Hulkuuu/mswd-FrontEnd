@@ -1,0 +1,264 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  background-image: url('./Untitled design.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: auto;
+}
+
+.App {
+  color: #a00000be; /* Sets the font color */
+  display: flex; /* Enables flexbox for layout */
+  flex-direction: column; /* Aligns children in a column */
+  align-items: center; /* Centers children horizontally */
+  padding: 20px; /* Adds padding around the content */
+  position: relative; /* Sets the position to relative for potential positioning of children */
+  border-top: 20px solid #a00000be; /* Adds a top border */
+  border-bottom: 20px solid #a00000be; /* Adds a bottom border */
+  background-image: url('./Untitled design.png'); /* Sets a background image */
+  background-size: cover; /* Makes the background image cover the entire element */
+  background-position: center; /* Centers the background image */
+  height: 100vh; /* Makes the App component take the full height of the viewport */
+  overflow: auto; /* Allows scrolling if content overflows */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.faculty-grid, .courses-grid, .students-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusts number of columns based on available space */
+  gap: 20px; /* Adds space between grid items */
+  padding: 20px;
+  width: 90%;
+}
+
+.faculty-item, .course-item, .student-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faculty-details, .course-details, .student-details, .Textbg {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background color */
+  padding: 40px; /* Adds padding around the text */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 1px 1px rgb(0, 0, 0); /* Adds subtle shadow */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
+}
+
+.course-details {
+  padding: 15px; /* Smaller padding for course details */
+}
+
+.Textbg {
+  text-align: center; /* Centers text and inline elements within the div */
+}
+
+.btn {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  display: inline-block; /* Ensures the button is treated as an inline-block element */
+}
+
+.btn:hover {
+  background-color: #a00000be;
+  color: white;
+}
+
+.faculty-details:hover, .student-details:hover, .Textbg:hover {
+  background-color: rgba(160, 0, 0, 0.8); /* Change background color to semi-transparent red on hover */
+  color: white; /* Change text color to white on hover */
+}
+
+.Textbg:hover .btn {
+  background-color: #ddd;
+  color: black;
+}
+
+.Textbg:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Maintain normal color on button hover */
+  color: #a00000be; /* Maintain normal text color on button hover */
+}
+
+.Textbg:hover .btn:hover {
+  background-color: #a00000be;
+  color: white;
+}
+
+
+
+
+.logo:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+  background-color: #74a7e0;
+  color: rgb(57, 93, 255);
+}
+
+.image-item {
+  display: flex; /* Align image and text vertically */
+  flex-direction: column; /* Stack image on top of text */
+  align-items: center; /* Center text under the image */          
+  margin: 20px; /* Space between items */
+}
+
+.image-text {
+  margin-top: 10px; /* Space between image and text */
+  font-size: 18px; /* Increase font size */
+  font-family: 'classic-roman', sans-serif;
+  font-weight: bold; /* Make text bold */
+  text-align: center; /* Center text horizontally */
+  color: #333; /* Adjust text color */
+}
+
+.logo-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background to the container */
+  padding: 20px; /* Add some padding */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  margin-bottom: 40px; /* Add some space below the image */
+}
+
+.image-row {
+  display: flex; /* Arrange children in a row */
+  justify-content: center; /* Center the row horizontally */
+  flex-wrap: wrap; /* Allow wrapping if necessary */
+  margin-top: 20px; /* Add some space above the image row */
+}
+
+.logo {
+  width: 220px; /* Set width of the logo */
+  height: 220px; /* Set height to ensure consistent sizing */
+  object-fit: cover; /* Cover the entire area, keeping aspect ratio */
+  background-color: #00fc4c;
+  margin: 20px; /* Adjust margin for spacing between images */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.logotop {
+  width: 400px; /* Set width of the logo */
+  height: 400px; /* Set height to ensure consistent sizing */
+  object-fit: contain; /* Ensure the logo maintains aspect ratio */
+  margin-bottom: 10px; /* Reduce space below the top logo */
+}
+
+.logoKL {
+  width: 150px; /* Set width of the logo */
+  height: 150px; /* Set height to ensure consistent sizing */
+  object-fit: contain; /* Ensure the logo maintains aspect ratio */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin-top: 10px; /* Reduce space above the logo container */
+}
+
+
+
+/* Position the button */
+.toggle-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/* App.css */
+
+/* Ensures the navbar stretches the full width of the viewport */
+.navbar {
+  width: 100%;
+  background-color: #a00000be;
+}
+
+/* Ensures the container within the navbar also stretches to full width */
+.navbar .container-fluid {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Adjusts the padding of the navbar */
+.navbar-expand-lg {
+  padding: 10; /* Adjust if needed */
+}
+
+/* Optional: Adjust the background color of the navbar to match the padding color */
+.navbar-bg-color {
+  background-color: #a00000be;
+}
+
+/* Ensures that the navbar items are aligned properly */
+.navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styles for the dropdown menu */
+.dropdown-menu {
+  background-color: #a00000be;
+}
+.navbar-nav .nav-link {
+  color: #ffffff; /* Change this to your desired text color */
+  font-size: 25px; /* Change to your desired font size */
+  padding: 20px;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #cccccc; /* Change this to your desired hover text color */
+}
+
+/* Styles for the active link */
+.navbar-nav .nav-link.active {
+  color: #ffcc00; /* Change this to your desired active link text color */
+}
+
+/* Styles for the dropdown menu items */
+.dropdown-menu .dropdown-item {
+  color: #ffffff; /* Change this to your desired dropdown text color */
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: #cccccc; /* Change this to your desired dropdown hover text color */
+}
+
+/* Styles for the form inside the navbar */
+.navbar .form-control {
+  background-color: #ffffff; /* Change this to your desired form background color */
+  color: #000000; /* Change this to your desired form text color */
+}
+
+.navbar .btn {
+  background-color: #a00000be;
+  color: #ffffff; /* Change this to your desired button text color */
+}
+
+.navbar .btn:hover {
+  background-color: #800000;
+  color: #ffffff; /* Change this to your desired button hover text color */
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}

@@ -1,0 +1,56 @@
+/* Basic styling for the timetable container */
+.timetable-container {
+  padding: 20px;
+  overflow-x: auto;
+  background-color: rgba(255, 255, 255, 0.8); /* Translucent white background for the whole container */
+  border-radius: 8px; /* Optional: rounded corners for the container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: shadow for better visibility */
+}
+
+/* Styling for timetable table */
+.timetable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.8); /* Translucent white background for the table */
+  border-radius: 8px; /* Optional: rounded corners for the table */
+}
+
+/* Styling for table headers and cells */
+.timetable th, .timetable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  background-color: transparent; /* No color for table cells */
+}
+
+.timetable th {
+  background-color: rgba(242, 242, 242, 0.8); /* Slightly translucent background for headers */
+}
+
+/* Additional styling */
+.day-cell {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hours-list {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Translucent white background for the hours list */
+  padding: 10px; /* Padding for the hours list */
+  border-radius: 8px; /* Optional: rounded corners for the hours list */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: shadow for better visibility */
+}
+
+.hours-list h3 {
+  font-weight: bold; /* Make the title bold */
+}
+
+.hours-list ul {
+  list-style-type: none;
+  padding: 0; /* Remove padding for the list */
+}
+
+.hours-list li {
+  margin: 10px 0;
+  font-weight: bold; /* Make the list items bold */
+}
