@@ -14,7 +14,7 @@ import Library from './klu Library.jpg'; // Update with the actual path
 import Students from './klu Students.jpeg'; // Update with the actual path
 import faculty from './klu Faculty.jpeg'; // Update with the actual path
 import Sports from './KluSports.jpeg'; // Update with the actual path
-
+import Feedback from './components/Feedback';
 import './App.css';
 
 function App() {
@@ -54,6 +54,7 @@ function App() {
           <Route path="/faculty" element={<Faculty />} />
           <Route path="/timetable" element={<Timetable />} /> {/* Add the timetable route */}
           <Route path="/assignments" element={<Assignments />} /> {/* Add the assignments route */}
+          <Route path="/Feedback" element={<Feedback />} />
         </Routes>
         <Footer />
       </div>

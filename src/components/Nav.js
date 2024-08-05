@@ -58,6 +58,9 @@ const Nav = () => {
             <li className="nav-item">
               <Link className="nav-link" to="/Assignments">Assignments</Link> 
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/Feedback">Feedback</Link> 
+            </li>
             <li className="nav-item dropdown">
               <div className="dropdown-menu">
                 <Link className="dropdown-item" to="/action">Action</Link>

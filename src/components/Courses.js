@@ -189,4 +189,4 @@ const CoursesTable = () => {
   );
 };
 
-export default CoursesTable;no
+export default CoursesTable;
