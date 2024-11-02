@@ -16,6 +16,7 @@ import faculty from './klu Faculty.jpeg'; // Update with the actual path
 import Sports from './KluSports.jpeg'; // Update with the actual path
 import Feedback from './components/Feedback';
 import './App.css';
+import MultiActionAreaCard from './components/MultiActionAreaCard';
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
           <Route path="/timetable" element={<Timetable />} /> {/* Add the timetable route */}
           <Route path="/assignments" element={<Assignments />} /> {/* Add the assignments route */}
           <Route path="/Feedback" element={<Feedback />} />
+          
         </Routes>
         <Footer />
       </div>

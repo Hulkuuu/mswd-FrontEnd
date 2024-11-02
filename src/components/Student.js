@@ -1,9 +1,9 @@
 import React from 'react';
-
+import Attendance from './Attandance';
 const Student = () => {
   const students = [
     { id: 2300033461, name: "K. Teja", branch: "CSE", year: 2 },
-    { id: 2300032798, name: "M. Harshita", branch: "CSE", year: 2 },
+    { id: 2300032798, name: "bhAAi", branch: "CSE", year: 2 },
     { id: 2300080088, name: "M. Satvik", branch: "AI&DS", year: 2 },
     { id: 2300031874, name: "N. Ushaswi", branch: "CSE", year: 2 },
     { id: 2300030696, name: "S. Ramanjan", branch: "CSE", year: 2 },
@@ -18,6 +18,7 @@ const Student = () => {
             <h3>Student ID: {student.id}</h3>
             <h3>Branch: {student.branch}</h3>
             <h3>Year: {student.year}</h3>
+            <Attendance/>
           </div>
         </div>
       ))}

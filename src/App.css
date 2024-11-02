@@ -74,7 +74,7 @@ html, body {
   color: white;
 }
 
-.faculty-details:hover, .student-details:hover, .Textbg:hover {
+.faculty-details:hover, .Textbg:hover {
   background-color: rgba(160, 0, 0, 0.8); /* Change background color to semi-transparent red on hover */
   color: white; /* Change text color to white on hover */
 }
